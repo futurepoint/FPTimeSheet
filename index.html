@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>Time Sheet - FuturePoint</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<link rel="shortcut icon" href="./assets/img/logo_48_eps.png">
+<link rel="apple-touch-icon" href="./assets/img/logo_48_eps.png">
+<link rel="apple-touch-startup-image" href="./assets/img/logo_48_eps.png">
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<!-- Common Library -->
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<!-- FP SCRIPT -->  
+<link rel="stylesheet" href="./assets/css/common.css" />
+<script src="./assets/js/sec.js"></script>
+<script src="./assets/js/helper.js"></script> 
+<script src="./assets/js/futurepoint.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+</head>
+
+<body>
+<!--Page : FPTS001-->
+  <div data-role="page" id="FPTS001" data-fullscreen="false">
+<!--Header : FPTS001-->
+		<div data-role="header" data-theme="a" data-position="fixed">
+			<h1>Time Sheet Login</h1>
+			<a href="signup.html" data-icon="plus" class="ui-btn-right">Resister</a>
+		</div>
+<!--Content : FPTS001-->
+		<div data-role="content" id="FPTS001_content">
+			<h2>(Logo) Time Sheet</h2>
+			
+			<input type="email" id="txt_email" data-clear-btn="true" maxlength=30 placeholder="Time Sheet계정(이메일)" />
+			<input type="password" id="txt_pw" data-clear-btn="true" maxlength=16 placeholder="비밀번호(4~16자리)" />
+			<p><input type="button" id="btn_login" data-icon="check" value="Login"/></p>
+
+ 			<div class="ui-grid-a">
+				<div class="ui-block-a" >
+					<label for="rememberme">Remeber me?</label>
+					<input type="checkbox" name="rememberme" id="rememberme" data-mini="true" checked:false />
+				</div>
+			</div> 
+			<br>
+			<div align="center" id="copyright">@ Copyright 2013 futurepoint All rights Reserved</div>
+		</div>
+	</div>
+</body>
+</html>
